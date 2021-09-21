@@ -1,1 +1,88 @@
-<mxfile host="app.diagrams.net" modified="2021-09-21T14:18:53.922Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" version="15.2.9" etag="Xkx3pixcE9bqpRxuUvJC" type="github"><diagram id="YcuowkEEjXzd5HI7_TAc">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-21T14:25:16.406Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="CYc8rJd6PatnDx8-rLZs" version="15.2.9" type="github">
+  <diagram id="YcuowkEEjXzd5HI7_TAc" name="Page-1">
+    <mxGraphModel dx="1422" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-1" target="K_7PXY-Hbv6WL9IZnMcc-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-1" target="K_7PXY-Hbv6WL9IZnMcc-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-1" target="K_7PXY-Hbv6WL9IZnMcc-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-1" value="Студент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="75" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-3" value="Подача заявлений на матпомощь" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-4" value="Получение расписаний занятий" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="90" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-5" value="Получение успеваемости" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="140" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-13" target="K_7PXY-Hbv6WL9IZnMcc-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-13" target="K_7PXY-Hbv6WL9IZnMcc-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-13" target="K_7PXY-Hbv6WL9IZnMcc-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-13" value="Секретарь&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="255" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-14" value="Проверка заявлений на наличие всех документов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-15" value="Выдача расписаний занятий" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-16" value="Выдача успеваемости студентов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-20" target="K_7PXY-Hbv6WL9IZnMcc-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-20" target="K_7PXY-Hbv6WL9IZnMcc-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-20" target="K_7PXY-Hbv6WL9IZnMcc-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-20" target="K_7PXY-Hbv6WL9IZnMcc-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-20" value="Декан" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-21" value="Подпись заявлений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-22" value="Передача заявлеинй на матпомощь в бухгалтерию" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="450" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-23" value="Составление успеваемости" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="500" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-24" value="Отчисление неуспевающих студентов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="554.5" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-26" value="Бухгалтер" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="620" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-27" value="Перечисление матпомощи по заявлениям" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="635" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="K_7PXY-Hbv6WL9IZnMcc-26" target="K_7PXY-Hbv6WL9IZnMcc-27" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
