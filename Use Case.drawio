@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-23T06:25:21.156Z" agent="5.0 (Windows)" etag="i-BMlAcO_rKR-EKEZGib" version="15.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-23T06:29:42.984Z" agent="5.0 (Windows)" etag="w6wLaeyJcgovSbW2H8Bk" version="15.2.7" type="github">
   <diagram id="YcuowkEEjXzd5HI7_TAc" name="Page-1">
     <mxGraphModel dx="1221" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -31,11 +31,11 @@
         <mxCell id="K_7PXY-Hbv6WL9IZnMcc-14" value="Проверка заявлений на наличие всех документов" style="whiteSpace=wrap;html=1;shadow=0;" parent="1" vertex="1">
           <mxGeometry x="160" y="220" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-15" value="Выдача расписаний занятий" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-15" value="Формирование расписаний занятий" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="270" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-16" value="Выдача успеваемости студентов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="320" width="220" height="30" as="geometry" />
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-16" value="Публикация успеваемости студентов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="350" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="K_7PXY-Hbv6WL9IZnMcc-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endFill=0;endArrow=none;" parent="1" source="K_7PXY-Hbv6WL9IZnMcc-20" target="K_7PXY-Hbv6WL9IZnMcc-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -55,10 +55,10 @@
         <mxCell id="K_7PXY-Hbv6WL9IZnMcc-21" value="Подпись заявлений" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="400" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-22" value="Передача заявлеинй на матпомощь в бухгалтерию" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-22" value="Передача заявлений на матпомощь в бухгалтерию" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="450" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-23" value="Составление успеваемости" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="K_7PXY-Hbv6WL9IZnMcc-23" value="Составление сводной ведомости&lt;br&gt;об успеваемости студентов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="500" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="K_7PXY-Hbv6WL9IZnMcc-24" value="Отчисление неуспевающих студентов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -81,6 +81,12 @@
         </mxCell>
         <mxCell id="n2QhQ5gTbq7k-iHMUPD2-4" value="Получение успеваемости" style="ellipse;whiteSpace=wrap;html=1;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="200" y="130" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n2QhQ5gTbq7k-iHMUPD2-9" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" edge="1" parent="1" source="n2QhQ5gTbq7k-iHMUPD2-8" target="K_7PXY-Hbv6WL9IZnMcc-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2QhQ5gTbq7k-iHMUPD2-8" value="Публикациярасписаний занятий" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
