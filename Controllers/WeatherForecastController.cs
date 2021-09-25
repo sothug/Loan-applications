@@ -8,32 +8,22 @@ using Microsoft.Extensions.Logging;
 namespace Deans_Office.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("/rnd")]
+    public class TestController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public int GetRnd()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return rng.Next();
+        }
+
+        [HttpPost]
+        [Route("/rnd/lim")]
+        public int GetLimRnd(int i)
+        {
+            var rng = new Random();
+            return rng.Next() % i;
         }
     }
 }

@@ -27,3 +27,13 @@ D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Dean
 D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\ref\Deans Office.dll
 D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.pdb
 D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.genruntimeconfig.cache
+D:\РГРТУ\Учебная практика\Deans Office\bin\Debug\net5.0\Deans Office.Views.dll
+D:\РГРТУ\Учебная практика\Deans Office\bin\Debug\net5.0\Deans Office.Views.pdb
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.RazorAssemblyInfo.cache
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.RazorAssemblyInfo.cs
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.TagHelpers.input.cache
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.TagHelpers.output.cache
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.RazorCoreGenerate.cache
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Razor\Index.cshtml.g.cs
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.RazorTargetAssemblyInfo.cs
+D:\РГРТУ\Учебная практика\Deans Office\obj\Debug\net5.0\Deans Office.Views.pdb
