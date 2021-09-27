@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\РГРТУ\\Учебная практика\\Deans Office\\Deans Office.csproj",
-      "projectName": "Deans Office",
-      "projectPath": "D:\\РГРТУ\\Учебная практика\\Deans Office\\Deans Office.csproj",
+      "projectUniqueName": "D:\\РГРТУ\\Учебная практика\\Loan applications\\Loan applications.csproj",
+      "projectName": "Loan applications",
+      "projectPath": "D:\\РГРТУ\\Учебная практика\\Loan applications\\Loan applications.csproj",
       "packagesPath": "C:\\Users\\egorg\\.nuget\\packages\\",
-      "outputPath": "D:\\РГРТУ\\Учебная практика\\Deans Office\\obj\\",
+      "outputPath": "D:\\РГРТУ\\Учебная практика\\Loan applications\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\egorg\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace Deans_Office
+namespace Loan_applications
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace Deans_Office
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Deans_Office", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Loan_applications", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace Deans_Office
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Deans_Office v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Loan_applications v1"));
             }
 
             app.UseHttpsRedirection();

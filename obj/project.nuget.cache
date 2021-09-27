@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "METJqInFhueekemw+J7jtZ+DTq7VGsZTOv5UKRHwb3F3I+T5CrHkzXsw/Qm/3PLg+69u/fNJRvxZ70Tnc+MjWQ==",
+  "dgSpecHash": "SVQeFkTdv3Kp8p9seGlkZNSDUYETWm5gPj1nawWnXzdYfdJzyd/96LdTFTXUCTx34KytH0VMZc+iQXbXVSDJrw==",
   "success": true,
-  "projectFilePath": "D:\\РГРТУ\\Учебная практика\\Deans Office\\Deans Office.csproj",
+  "projectFilePath": "D:\\РГРТУ\\Учебная практика\\Loan applications\\Loan applications.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egorg\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\egorg\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

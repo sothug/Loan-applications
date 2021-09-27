@@ -31,7 +31,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Deans Office/1.0.0": {
+      "Loan applications/1.0.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -319,10 +319,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "Deans Office.dll": {}
+          "Loan applications.dll": {}
         },
         "compile": {
-          "Deans Office.dll": {}
+          "Loan applications.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -2085,7 +2085,7 @@
     }
   },
   "libraries": {
-    "Deans Office/1.0.0": {
+    "Loan applications/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

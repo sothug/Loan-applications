@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Deans_Office</RootNamespace>
+    <RootNamespace>Loan_applications</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
