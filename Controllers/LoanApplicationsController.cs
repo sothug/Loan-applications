@@ -8,14 +8,57 @@ using Microsoft.Extensions.Logging;
 namespace Loan_applications.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class LoanApplicationsController : ControllerBase
+    [Route("/Client")]
+    public class ClientController : ControllerBase
+    {
+        [HttpPost]
+        [Route("/Client/ChooseType")]
+        public string ChooseType(string str)
+        {
+            return "Это метод выбора типа кредитования.";
+        }
+
+        [HttpPost]
+        [Route("/Client/ChooseOrganization")]
+        public string ChooseOrganization(string str)
+        {
+            return "Это метод выбора кредитной организации.";
+        }
+
+        [HttpPost]
+        [Route("/Client/SubmitInformation")]
+        public string SubmitInformation(string str)
+        {
+            return "Это метод предоставления нужной информации о клиенте.";
+        }
+
+        [HttpPost]
+        [Route("/Client/Apply")]
+        public string Apply(string str)
+        {
+            return "Это метод подачи заявки на кредит.";
+        }
+    }
+
+    [ApiController]
+    [Route("/Manager")]
+    public class ManagerController : ControllerBase
     {
         [HttpGet]
-        public string Get()
+        public string CheckingSolvency()
         {
-            var rng = new Random();
-            return "Да?";
+            return "Это метод проверки платежеспособности клиента.";
+        }
+    }
+
+    [ApiController]
+    [Route("/Dispatcher")]
+    public class DispatcherController : ControllerBase
+    {
+        [HttpGet]
+        public string ProcessingApplications()
+        {
+            return "Это метод обработки заявок.";
         }
     }
 }
