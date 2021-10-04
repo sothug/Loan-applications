@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-02T13:14:55.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="7YhCkXQsv-sxyKAo3Kae" version="15.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-04T14:08:27.664Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="SgKqGoo5L1gHndJIedVZ" version="15.4.1" type="github">
   <diagram id="YcuowkEEjXzd5HI7_TAc" name="Page-1">
     <mxGraphModel dx="1422" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -39,6 +39,9 @@
         <mxCell id="-ZqQXuWoFtTnUfQgecrW-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="-ZqQXuWoFtTnUfQgecrW-37" target="-ZqQXuWoFtTnUfQgecrW-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="6D-4IsoT337310Xn8fcl-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="-ZqQXuWoFtTnUfQgecrW-37" target="6D-4IsoT337310Xn8fcl-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="-ZqQXuWoFtTnUfQgecrW-37" value="Менеджер" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="540" width="30" height="60" as="geometry" />
         </mxCell>
@@ -71,6 +74,9 @@
         </mxCell>
         <mxCell id="-ZqQXuWoFtTnUfQgecrW-48" value="Получение проверенной заявки" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="530" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6D-4IsoT337310Xn8fcl-1" value="&lt;span&gt;Обновление данных о&lt;/span&gt;&lt;br&gt;&lt;span&gt;кредитной организации&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="650" width="150" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
