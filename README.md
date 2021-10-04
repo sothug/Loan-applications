@@ -1,7 +1,10 @@
 # Система приёма заявок на кредит
-## Содержание
+## `Содержание`
 [Введение](#introduction)  
-[1. Описание предметной области](#domainDescription)  
+[1. Описание](#description)  
+ -[1.1. Описание предметной области](#domainDescription)  
+ -[1.2. Актуальность задачи](#relevanceTask)  
+<!--- -[1.3. Граничные условия](#conditions)  -->
 [2. Сравнительный анализ существующих прогарммных решений](#existingSoftware)    
 [3. Проектирование](#design)  
 [4. Тестирование](#testing)    
@@ -12,13 +15,35 @@
 
 ## Введение
 
-Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+Данная работа напралена на развитие навыков программирования. Язык c#, на котором она выполняется, современный объектно-ориентированный и типобезопасный язык программирования. С момента создания язык C# обогатился функциями для поддержки новых рабочих нагрузок и современными рекомендациями по разработке ПО, его называют самым мультипарадигменным, универсальным, продвинутым и удобным в использовании языком программирования.
+
+Темой проекта является информационная система "Система приёма заявок на кредит". Программа будет использоваться для создания и просмотра информации о заявках на кредит.
+
+Обслуживание клиентов, которые хотят оформить кредит, должно проходить быстро, тем самым и регистрация клиента должна оформляться быстро. Следовательно, есть необходимость в ускорении данного процесса. Загруженность банков иногда имеет пиковый характер.
+
+<a name="description"/>
+
+## 1. Описание
 
 <a name="domainDescription"/>
 
-## 1. Описание предметной области
+### 1.1. Описание предметной области
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Предметная область, подлежащая изучению - «банк», в частности «кредитование». В сферу этой предметной области попадают финансово-кредитные учреждения, производящие разнообразные виды операций с деньгами и ценными бумагами. Цель функционирования учреждений этой предметной области - безопасное хранение денег, безналичные переводы от одного клиента к другому, выдача кредитов. Для оказания услуг необходимо наличие квалифицированных специалистов, хранилищ, помещений, удовлетворяющих нормам санитарных и других требований в соответствии с действующим законодательством.
+
+Кредит или кредитные отношения -- общественные отношения, возникающие между субъектами экономических отношений по поводу движения стоимости. Кредитные отношения могут выражаться в разных формах кредита (коммерческий кредит, банковский кредит и др.), займе, лизинге, факторинге и т. д.
+
+Возникновение кредита как особой формы стоимостных отношений происходит тогда, когда стоимость, высвободившаяся у одного экономического субъекта, какое-то время не вступает в новый воспроизводственный цикл. Благодаря кредиту она переходит от субъекта, не использующего её (кредитор), к другому субъекту, испытывающему потребность в дополнительных средствах (заёмщик)
+
+<a name="relevanceTask"/>
+
+### 1.2. Актуальность задачи
+
+Кредит играет важную роль в саморегулировании величины средств, необходимых для совершения хозяйственной деятельности. Благодаря кредиту предприятия располагают в любой момент такой суммой денежных средств, которая необходима для нормальной работы. Так же роль кредита важна для пополнения оборотных средств, потребность в которых у каждого предприятия не стабильна, меняется в зависимости от условий работы: рыночных, природных, климатических, политических и др. Роль кредита велика для воспроизводства основных фондов. Используя кредит, предприятие может совершенствовать, увеличивать производство значительно быстрее, чем при его отсутствии.
+
+<!---<a name="conditions"/>
+
+### 1.3. Граничные условия -->
 
 <a name="existingSoftware"/>
 
