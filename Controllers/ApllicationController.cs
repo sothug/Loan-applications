@@ -8,33 +8,9 @@ using Microsoft.Extensions.Logging;
 namespace Loan_applications.Controllers
 {
     [ApiController]
-    [Route("/Client")]
-    public class ClientController : ControllerBase
+    [Route("/Application")]
+    public class ApplicationController : ControllerBase
     {
-        [HttpPost("ChooseType")]
-        public string ChooseType(string str)
-        {
-            return str;
-        }
-
-        [HttpPost("ChooseOrganization")]
-        public string ChooseOrganization(string str)
-        {
-            return str;
-        }
-
-        [HttpPost("SubmitInformation")]
-        public string SubmitInformation(string str)
-        {
-            return str;
-        }
-
-        [HttpPost("Apply")]
-        public string Apply(string str)
-        {
-            return str;
-        }
-
         [HttpPut("Create")]
         public string Create(string str)
         {
