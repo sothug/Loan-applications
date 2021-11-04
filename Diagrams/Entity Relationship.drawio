@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T09:19:11.158Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="52JOPEisWlYpLDjc4OmP" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-04T10:16:26.353Z" agent="5.0 (Windows)" etag="fiqw0uh29-pvDhGwp36Q" version="15.6.8" type="github">
   <diagram id="STG1CfUJH8_hACuyrtWj" name="Page-1">
-    <mxGraphModel dx="813" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -536,7 +536,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iR1Z5DH0WvsBCBYkt2tV-22" value="ФИО" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=default;fontColor=default;" parent="iR1Z5DH0WvsBCBYkt2tV-20" vertex="1">
+        <mxCell id="iR1Z5DH0WvsBCBYkt2tV-22" value="ФИО: string" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=default;fontColor=default;" parent="iR1Z5DH0WvsBCBYkt2tV-20" vertex="1">
           <mxGeometry x="30" width="150" height="30" as="geometry">
             <mxRectangle width="150" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -655,7 +655,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yfqUR5KTfE2YTjm02QCo-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" edge="1" parent="1" source="UMTiyl8Y94PRi9biplay-2" target="6rEdrXJqlaxMiVk5ivlZ-23">
+        <mxCell id="yfqUR5KTfE2YTjm02QCo-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="UMTiyl8Y94PRi9biplay-2" target="6rEdrXJqlaxMiVk5ivlZ-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="290" y="120" />
