@@ -11,7 +11,7 @@ namespace Loan_applications.Controllers
     [Route("/Organization")]
     public class OrganizationController : ControllerBase
     {
-        [HttpPut("Create")]
+        [HttpPost("Create")]
         public string Create(string str)
         {
             return str;
@@ -23,7 +23,7 @@ namespace Loan_applications.Controllers
             return str;
         }
 
-        [HttpPatch("Update")]
+        [HttpPut("Update")]
         public string Update(string str)
         {
             return str;

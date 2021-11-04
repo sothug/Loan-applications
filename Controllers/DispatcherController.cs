@@ -23,7 +23,7 @@ namespace Loan_applications.Controllers
             return str;
         }
 
-        [HttpPut("Create")]
+        [HttpPost("Create")]
         public string Create(string str)
         {
             return str;
@@ -35,7 +35,7 @@ namespace Loan_applications.Controllers
             return str;
         }
 
-        [HttpPatch("Update")]
+        [HttpPut("Update")]
         public string Update(string str)
         {
             return str;
