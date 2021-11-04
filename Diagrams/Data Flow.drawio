@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-03T09:58:17.002Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="h82yERaBat2280LcH7Yg" version="15.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-04T10:13:26.931Z" agent="5.0 (Windows)" etag="58PFwkH5sEUvxhxJVAZx" version="15.6.8" type="github">
   <diagram id="7jCEV3gtXmofWcO8c_bA" name="Page-1">
-    <mxGraphModel dx="1635" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,7 +95,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RfxOitIQ1wXGV1ma2rkV-13" value="Получить заявку" style="html=1;dashed=0;whitespace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="60" y="480" width="120" height="50" as="geometry" />
+          <mxGeometry x="60" y="510" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="RfxOitIQ1wXGV1ma2rkV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;labelBackgroundColor=default;fontColor=default;" parent="1" source="RfxOitIQ1wXGV1ma2rkV-15" edge="1">
           <mxGeometry relative="1" as="geometry">
