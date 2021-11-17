@@ -34,3 +34,4 @@ obj/*
 *.pidb
 *.svclog
 *.scc
+*.cache
