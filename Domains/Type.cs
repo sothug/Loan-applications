@@ -11,9 +11,9 @@ namespace Loan_applications.Domains
     {
         public int Id { get; set; }
         public string TypeOfLending { get; set; }
-        public int InterestRate { get; set; }
+        public float InterestRate { get; set; }
 
-        Type(int id, string typeOfLending, int interestRate)
+        Type(int id, string typeOfLending, float interestRate)
         {
             this.Id = id;
             this.TypeOfLending = typeOfLending;
