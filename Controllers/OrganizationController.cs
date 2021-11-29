@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Loan_applications.Domains;
+using Loan_applications.Storage;
 
 namespace Loan_applications.Controllers
 {
@@ -12,27 +9,39 @@ namespace Loan_applications.Controllers
     public class OrganizationController : ControllerBase
     {
         [HttpPost("Create")]
-        public string Create(string str)
+        public bool Create(Organization organization)
         {
-            return str;
+            return Storages.OrganizationStorage.Create(organization);
         }
 
         [HttpGet("Read")]
-        public string Read(string str)
+        public Organization Read(int ID)
         {
-            return str;
+            return Storages.OrganizationStorage.Read(ID);
         }
 
         [HttpPut("Update")]
-        public string Update(string str)
+        public Organization Update(Organization organization)
         {
-            return str;
+            return Storages.OrganizationStorage.Update(organization);
         }
 
         [HttpDelete("Delete")]
-        public string Delete(string str)
+        public bool Delete(int ID)
         {
-            return str;
+            return Storages.OrganizationStorage.Delete(ID);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.OrganizationStorage.SaveToXMLFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.OrganizationStorage.ReadFromXMLFile();
         }
     }
 }

@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Loan_applications.Storage;
 
 namespace Loan_applications.Domains
 {
-    public class Agreement
+    public class Agreement : WithID
     {
-        public int Id { get; set; }
         public int ApplicationId { get; set; }
         public int ClientId { get; set; }
         public DateTime When { get; set; }
         public int OrganizationId { get; set; }
 
-        Agreement(int id, int applicationId, int clientId, DateTime when, int organizationId)
+        public Agreement() { }
+
+        public Agreement(int id, int applicationId, int clientId, DateTime when, int organizationId)
         {
-            this.Id = id;
+            this.ID = id;
             this.ApplicationId = applicationId;
             this.ClientId = clientId;
             this.When = when;

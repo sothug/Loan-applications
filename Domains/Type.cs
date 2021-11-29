@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Loan_applications.Storage;
 
 namespace Loan_applications.Domains
 {
-    public class Type
+    public class TypeOfLending : WithID
     {
-        public int Id { get; set; }
-        public string TypeOfLending { get; set; }
+        public string Type { get; set; }
         public float InterestRate { get; set; }
 
-        Type(int id, string typeOfLending, float interestRate)
+        public TypeOfLending(int id, string type, float interestRate)
         {
-            this.Id = id;
-            this.TypeOfLending = typeOfLending;
+            this.ID = id;
+            this.Type = type;
             this.InterestRate = interestRate;
         }
     }

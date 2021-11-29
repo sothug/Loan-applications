@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Loan_applications.Domains;
+using Loan_applications.Storage;
 
 namespace Loan_applications.Controllers
 {
@@ -24,27 +21,39 @@ namespace Loan_applications.Controllers
         }
 
         [HttpPost("Create")]
-        public string Create(string str)
+        public bool Create(Dispatcher dispatcher)
         {
-            return str;
+            return Storages.DispatcherStorage.Create(dispatcher);
         }
 
         [HttpGet("Read")]
-        public string Read(string str)
+        public Dispatcher Read(int ID)
         {
-            return str;
+            return Storages.DispatcherStorage.Read(ID);
         }
 
         [HttpPut("Update")]
-        public string Update(string str)
+        public Dispatcher Update(Dispatcher dispatcher)
         {
-            return str;
+            return Storages.DispatcherStorage.Update(dispatcher);
         }
 
         [HttpDelete("Delete")]
-        public string Delete(string str)
+        public bool Delete(int ID)
         {
-            return str;
+            return Storages.DispatcherStorage.Delete(ID);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.DispatcherStorage.SaveToXMLFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.DispatcherStorage.ReadFromXMLFile();
         }
     }
 }

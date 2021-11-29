@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Loan_applications.Storage;
 
 namespace Loan_applications.Domains
 {
-    public class Application
+    public class Application : WithID
     {
         static private Dictionary<int, string> Statuses = new Dictionary<int, string>
         {
@@ -17,7 +14,6 @@ namespace Loan_applications.Domains
             {1, "Verified application" },
             {2, "Agreement signed"}
         };
-        public int Id { get; set; }
         public int ClientId { get; set; }
         public int DispatcherId { get; set; }
         public int ManagerId { get; set; }
@@ -27,9 +23,9 @@ namespace Loan_applications.Domains
         public int OrganizationId { get; set; }
         public int StatusCode { get; set; }
 
-        Application(int id, int clientId, int amount, DateTime when, int typeId)
+        public Application(int id, int clientId, int amount, DateTime when, int typeId)
         {
-            this.Id = id;
+            this.ID = id;
             this.ClientId = clientId;
             this.Amount = amount;
             this.When = when;
