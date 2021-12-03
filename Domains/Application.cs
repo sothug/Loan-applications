@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Loan_applications.Storage;
+using Loan_applications.Repository;
 
 namespace Loan_applications.Domains
 {
-    public class Application : WithID
+    public class Application : IIdentifier
     {
         static private Dictionary<int, string> Statuses = new Dictionary<int, string>
         {
@@ -14,6 +14,7 @@ namespace Loan_applications.Domains
             {1, "Verified application" },
             {2, "Agreement signed"}
         };
+        public int ID { get; set; }
         public int ClientId { get; set; }
         public int DispatcherId { get; set; }
         public int ManagerId { get; set; }
@@ -23,19 +24,21 @@ namespace Loan_applications.Domains
         public int OrganizationId { get; set; }
         public int StatusCode { get; set; }
 
+        public Application() { }
+
         public Application(int id, int clientId, int amount, DateTime when, int typeId)
         {
-            this.ID = id;
-            this.ClientId = clientId;
-            this.Amount = amount;
-            this.When = when;
-            this.TypeId = typeId;
-            this.StatusCode = 0;
+            ID = id;
+            ClientId = clientId;
+            Amount = amount;
+            When = when;
+            TypeId = typeId;
+            StatusCode = 0;
         }
 
         string GetState()
         {
-            return Statuses[this.StatusCode];
+            return Statuses[StatusCode];
         }
     }
 }

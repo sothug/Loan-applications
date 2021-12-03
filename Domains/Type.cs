@@ -1,17 +1,20 @@
-﻿using Loan_applications.Storage;
+﻿using Loan_applications.Repository;
 
 namespace Loan_applications.Domains
 {
-    public class TypeOfLending : WithID
+    public class TypeOfLending : IIdentifier
     {
+        public int ID { get; set; }
         public string Type { get; set; }
         public float InterestRate { get; set; }
 
+        public TypeOfLending() { }
+
         public TypeOfLending(int id, string type, float interestRate)
         {
-            this.ID = id;
-            this.Type = type;
-            this.InterestRate = interestRate;
+            ID = id;
+            Type = type;
+            InterestRate = interestRate;
         }
     }
 }

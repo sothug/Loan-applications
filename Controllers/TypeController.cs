@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Loan_applications.Domains;
-using Loan_applications.Storage;
+using Loan_applications.Repository;
 
 namespace Loan_applications.Controllers
 {

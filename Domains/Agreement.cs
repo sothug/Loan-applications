@@ -1,10 +1,11 @@
 ﻿using System;
-using Loan_applications.Storage;
+using Loan_applications.Repository;
 
 namespace Loan_applications.Domains
 {
-    public class Agreement : WithID
+    public class Agreement : IIdentifier
     {
+        public int ID { get; set; }
         public int ApplicationId { get; set; }
         public int ClientId { get; set; }
         public DateTime When { get; set; }
@@ -14,11 +15,11 @@ namespace Loan_applications.Domains
 
         public Agreement(int id, int applicationId, int clientId, DateTime when, int organizationId)
         {
-            this.ID = id;
-            this.ApplicationId = applicationId;
-            this.ClientId = clientId;
-            this.When = when;
-            this.OrganizationId = organizationId;
+            ID = id;
+            ApplicationId = applicationId;
+            ClientId = clientId;
+            When = when;
+            OrganizationId = organizationId;
         }
     }
 }

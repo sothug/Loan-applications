@@ -35,3 +35,7 @@ obj/*
 *.svclog
 *.scc
 *.cache
+
+# XML files (storages)
+*.xml
+Storages/*
