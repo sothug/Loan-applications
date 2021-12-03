@@ -6,14 +6,6 @@ namespace Loan_applications.Domains
 {
     public class Application : IIdentifier
     {
-        static private Dictionary<int, string> Statuses = new Dictionary<int, string>
-        {
-            {-2, "Insufficient information in the application" },
-            {-1, "Rejected application" },
-            {0, "New application" },
-            {1, "Verified application" },
-            {2, "Agreement signed"}
-        };
         public int ID { get; set; }
         public int ClientId { get; set; }
         public int DispatcherId { get; set; }
@@ -22,9 +14,11 @@ namespace Loan_applications.Domains
         public DateTime When { get; set; }
         public int TypeId { get; set; }
         public int OrganizationId { get; set; }
-        public int StatusCode { get; set; }
+        public Statuses Status { get; set; }
 
-        public Application() { }
+        public Application()
+        {
+        }
 
         public Application(int id, int clientId, int amount, DateTime when, int typeId)
         {
@@ -33,12 +27,9 @@ namespace Loan_applications.Domains
             Amount = amount;
             When = when;
             TypeId = typeId;
-            StatusCode = 0;
+            Status = 0;
         }
 
-        string GetState()
-        {
-            return Statuses[StatusCode];
-        }
+        public string GetState() => StatusDescriptor.Describe(Status);
     }
 }

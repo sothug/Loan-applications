@@ -47,13 +47,13 @@ namespace Loan_applications.Controllers
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.DispatcherStorage.SaveToXMLFile();
+            Storages.DispatcherStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.DispatcherStorage.ReadFromXMLFile();
+            Storages.DispatcherStorage.ReadFromXmlFile();
         }
     }
 }

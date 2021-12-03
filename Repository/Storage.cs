@@ -1,52 +1,52 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Xml.Serialization;
-using Loan_applications.Domains;
 
 namespace Loan_applications.Repository
 {
     public class Storage<TIdentifier> where TIdentifier : IIdentifier
     {
-        private static readonly string path = "Storages/" + typeof(TIdentifier).Name + "s.xml";
+        private static readonly string FilePath = "Storages/" + typeof(TIdentifier).Name + "s.xml";
         private List<TIdentifier> _storage = new();
 
         public Storage() { }
 
-        public void ReadFromXMLFile()
+        public void ReadFromXmlFile()
         {
-            if (!File.Exists(path)) return;
+            if (!File.Exists(FilePath)) return;
             var xs = new XmlSerializer(typeof(List<TIdentifier>));
-            using var fs = new FileStream(path, FileMode.Open);
+            using var fs = new FileStream(FilePath, FileMode.Open);
             _storage = (List<TIdentifier>)xs.Deserialize(fs);
         }
 
-        public void SaveToXMLFile()
+        public void SaveToXmlFile()
         {
-            if (!Directory.Exists(Path.GetDirectoryName(path)))
-                Directory.CreateDirectory(Path.GetFullPath(path));
+            if (!Directory.Exists(Path.GetDirectoryName(FilePath)))
+                Directory.CreateDirectory(Path.GetFullPath(FilePath));
             var xs = new XmlSerializer(typeof(List<TIdentifier>));
-            using var fs = new FileStream(path, FileMode.Create);
+            using var fs = new FileStream(FilePath, FileMode.Create);
             xs.Serialize(fs, _storage);
+            fs.Flush();
         }
 
         public bool Create(TIdentifier obj) 
         {
-            if (_storage.Where(t => t.ID == obj.ID).Count() != 0)
+            // if (_storage.Where(t => t.ID == obj.ID).Count() != 0)
+            if (_storage.Any(t => t.ID == obj.ID))
                 return false;
             _storage.Add(obj);
             return true;
         }
 
-        public TIdentifier Read(int ID) 
+        public TIdentifier Read(int id) 
         {
-            return _storage.Where(t => t.ID == ID).FirstOrDefault();
+            return _storage.FirstOrDefault(t => t.ID == id);
         }
 
         public TIdentifier Update(TIdentifier obj) 
         {
-            int index = _storage.FindIndex(t => t.ID == obj.ID);
+            var index = _storage.FindIndex(t => t.ID == obj.ID);
             if (index == -1)
                 Create(obj);
             else
@@ -54,9 +54,9 @@ namespace Loan_applications.Repository
             return obj;
         }
 
-        public bool Delete(int objID) 
+        public bool Delete(int objId) 
         { 
-            return _storage.RemoveAll(t => t.ID == objID) != 0;
+            return _storage.RemoveAll(t => t.ID == objId) != 0;
         }
     }
 }

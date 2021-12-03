@@ -35,13 +35,13 @@ namespace Loan_applications.Controllers
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.OrganizationStorage.SaveToXMLFile();
+            Storages.OrganizationStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.OrganizationStorage.ReadFromXMLFile();
+            Storages.OrganizationStorage.ReadFromXmlFile();
         }
     }
 }
