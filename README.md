@@ -1,4 +1,9 @@
-<div name="test" style="position:fixed">test</div>
+<style>
+    .fixed {
+        position: fixed;
+    }
+</style>
+<div name="test" class="fixed">test</div>
 
 # Система приёма заявок на кредит
 ## `Содержание`
