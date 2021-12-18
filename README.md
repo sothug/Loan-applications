@@ -2,23 +2,21 @@
 ## `Содержание`
 [Введение](#introduction)  
 1 [Описание](#description)  
-2 [Существующие решения](#existing)
+2 [Существующие решения](#existing)  
 3 [Разработка](#development)  
+3.1 [Проектирование](#design)  
+3.2 [Реализация](#realization)  
 4 [Тестирование](#testing)    
 [Заключение](#conclusion)  
 [Список использованных источников](#bibliography)  
 
-<a name="introduction"/>
-
-## Введение
+## Введение <a name="introduction"/>
 
 В данном отчёте рассматривается разработка "Системы приёма заявок на кредит". Система предназначена для создания и просмотра информации о заявках на кредит.
 
 Обслуживание клиентов, которые хотят оформить кредит, должно проходить быстро, тем самым и регистрация клиента должна оформляться быстро.
 
-<a name="description"/>
-
-## 1 Описание
+## 1 Описание <a name="description"/>
 
 Предметная область, подлежащая изучению - «банк», в частности «кредитование». В сферу этой предметной области попадают финансово-кредитные учреждения, производящие разнообразные виды операций с деньгами и ценными бумагами. Цель функционирования учреждений этой предметной области - безопасное хранение денег, безналичные переводы от одного клиента к другому, выдача кредитов. Для оказания услуг необходимо наличие квалифицированных специалистов, хранилищ, помещений, удовлетворяющих нормам санитарных и других требований в соответствии с действующим законодательством.
 
@@ -30,9 +28,7 @@
 
 > Минкомсвязь предложила обязать владельцев элементов, входящих в критическую информационную инфраструктуру (КИИ), «преимущественно использовать» российское программное обеспечение с 1 января 2021 года и российское оборудование — с 1 января 2022 года[<sup>[1]</sup>](#sourse_1)[<sup>[2]</sup>](#sourse_2).
 
-<a name="existing"/>
-
-## 2 Существующие решения
+## 2 Существующие решения <a name="existing"/>
 
 Рассмотрим два программных продукта: Сбербанк[<sup>[3]</sup>](#sourse_3) и ВТБ[<sup>[4]</sup>](#sourse_4).
 
@@ -47,9 +43,7 @@
 - оформление за 5 минут;
 - возможность заполнить заявку быстрее с помощью госуслуг.
 
-<a name="development"/>
-
-## 3 Разработка
+## 3 Разработка <a name="development"/>
 
 В данной главе будет рассмотрено создание приложения проектируемой информационной системы. Данный вид технологии крайне удобен тем, что данные хранятся не в среде, с которой взаимодействует пользователь. Это повышает уровень безопасности данных и предотвращается шанс их потери.
 
@@ -63,24 +57,126 @@
 
 На основе Use Case разрабатывается диаграмма потоков данных (Data Flow), которая наглядно отображает течение информации в пределах системы (см. [рисунок 2](#figure_2)).
 <p align="center"><img src="https://raw.githubusercontent.com/sothug/Loan-applications/main/Diagrams/SVG/Data%20Flow.drawio.svg"></p>
-<a name="figure_1"/><p align="center">Рисунок 1 - Диаграмма потоков данных</p>
+<a name="figure_2"/><p align="center">Рисунок 2 - Диаграмма потоков данных</p>
 
-<a name="testing"/>
+На основе Data Flow разрабатывается диаграмма отношений сущностей (Entity Relationship), на которой показано, как разные сущности взаимодействуют внутри системы (см. [рисунок 3](#figure_3)). К сущностям относятся люди, различные объекты, концепции и т.д.
+<p align="center"><img src="https://raw.githubusercontent.com/sothug/Loan-applications/main/Diagrams/SVG/Entity%20Relationship-Page-1.drawio.svg"></p>
+<a name="figure_3"/><p align="center">Рисунок 3 - Диаграмма отношений сущностей</p>
 
-## 4 Тестирование
+ER-диаграмма (см. [рисунок 3](#figure_3)) отражает отношения между сущностями, но не показывает, каких типов должны быть поля, поэтому была сделана физическая модель данных (см. [рисунок 4](#figure_4)).
+<p align="center"><img src="https://raw.githubusercontent.com/sothug/Loan-applications/main/Diagrams/SVG/Entity%20Relationship-Page-2.drawio.svg"></p>
+<a name="figure_4"/><p align="center">Рисунок 4 - Физическая модель данных</p>
 
-<a name="conclusion"/>
+## 3.2 Реализация <a name="realization"/>
 
-## Заключение
+На основе физической модели данных были созданы классы. Ниже приведен пример класса Кредитополучатель (см. [листинг 1](#listing_1)).  
+<a name="listing_1"/>Листинг 1 - Класс "Кредитополучатели"
+```csharp
+    public class Client : IIdentifier
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string HomeAdress { get; set; }
+        public string PhoneNumber { get; set; }
+        public string WorkAdress { get; set; }
+        public string PositionAtWork { get; set; }
+        public int Income { get; set; }
+    }
+```
 
-<a name="bibliography"/>
+В описании данного класс, как и в описании всех остальных классов, присутствует класс-предок "IIdentifier" (см. [листинг 2](#listing_2)), предназначение которого объясняется далее.  
+<a name="listing_2"/>Листинг 2 - Интерфейс "IIdentifier"
+```csharp
+    public interface IIdentifier
+    {
+        public int Id { get; set; }
+    }
+```
 
-## Список использованных источников
+Поскольку методы CRUD для всех сущностей одинаковы, описывать класс хранилищ для каждой сущности не очень рационально, поэтому было принято решение определить шаблонный класс хранилища (см. [листинг 3](#listing_3)).  
+<a name="listing_3"/>Листинг 3 - Шаблонный класс "Storage"
+``` csharp
+    public class Storage<TIdentifier> where TIdentifier : IIdentifier
+    {
+        private static readonly string FilePath = "Storages/" + typeof(TIdentifier).Name + "s.xml";
+        private List<TIdentifier> _storage = new();
 
-<a name="sourse_1">
+        public Storage() { }
 
-[1. Закон о применении российского ПО](https://regulation.gov.ru/projects#npa=102172).
+        public void ReadFromXmlFile()
+        {
+            if (!File.Exists(FilePath)) return;
+            var xs = new XmlSerializer(typeof(List<TIdentifier>));
+            using var fs = new FileStream(FilePath, FileMode.Open);
+            _storage = (List<TIdentifier>)xs.Deserialize(fs);
+        }
 
-<a name="sourse_2">
+        public void SaveToXmlFile()
+        {
+            if (!Directory.Exists(Path.GetDirectoryName(FilePath)))
+                Directory.CreateDirectory(Path.GetFullPath(FilePath));
+            var xs = new XmlSerializer(typeof(List<TIdentifier>));
+            using var fs = new FileStream(FilePath, FileMode.Create);
+            xs.Serialize(fs, _storage);
+            fs.Flush();
+        }
 
-[2. Статья о законе о применении российского ПО](https://www.rbc.ru/technology_and_media/20/05/2020/5ec3f99e9a79472ccb6b522d#:~:text=%D0%9C%D0%B8%D0%BD%D0%BA%D0%BE%D0%BC%D1%81%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B8%D0%BB%D0%B0%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C%D1%86%D0%B5%D0%B2%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%2C%20%D0%B2%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D1%85%20%D0%B2%20%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%83%D1%8E%20%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83%20(%D0%9A%D0%98%D0%98)%2C%20%C2%AB%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%C2%BB%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%BE%D1%84%D1%82%20%D1%81%201%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%C2%A0%E2%80%94%20%D1%81%201%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202022%20%D0%B3%D0%BE%D0%B4%D0%B0).
+        public bool Create(TIdentifier obj) 
+        {
+            // if (_storage.Where(t => t.ID == obj.ID).Count() != 0)
+            if (_storage.Any(t => t.Id == obj.Id))
+                return false;
+            _storage.Add(obj);
+            return true;
+        }
+
+        public TIdentifier Read(int id) 
+        {
+            return _storage.FirstOrDefault(t => t.Id == id);
+        }
+
+        public TIdentifier Update(TIdentifier obj) 
+        {
+            var index = _storage.FindIndex(t => t.Id == obj.Id);
+            if (index == -1)
+                Create(obj);
+            else
+                _storage[index] = obj;
+            return obj;
+        }
+
+        public bool Delete(int objId) 
+        { 
+            return _storage.RemoveAll(t => t.Id == objId) != 0;
+        }
+    }
+```
+
+<a name="listing_4"/>Листинг 4 - Общее хранилище
+``` csharp
+    public static class Storages
+    {
+        public static readonly Storage<Agreement> AgreementStorage = new();
+        public static readonly Storage<Application> ApplicationStorage = new();
+        public static readonly Storage<Client> ClientStorage = new();
+        public static readonly Storage<Dispatcher> DispatcherStorage  = new();
+        public static readonly Storage<Manager> ManagerStorage = new();
+        public static readonly Storage<Organization> OrganizationStorage = new();
+        public static readonly Storage<TypeOfLending> TypeStorage = new();
+    }
+```
+
+Был разработан набор WEB-методов, включая 4 базисные операции CRUD, для каждой сущности, отражающих предметную область. Примеры контроллеров для классов "Кредитополучатель" и "Вид кредитования".
+
+## 4 Тестирование <a name="testing"/>
+
+## Заключение <a name="conclusion"/>
+
+## Список использованных источников <a name="bibliography"/>
+
+<a name="sourse_1"/>[1. Закон о применении российского ПО](https://regulation.gov.ru/projects#npa=102172).
+
+<a name="sourse_2"/>[2. Статья о законе о применении российского ПО](https://www.rbc.ru/technology_and_media/20/05/2020/5ec3f99e9a79472ccb6b522d#:~:text=%D0%9C%D0%B8%D0%BD%D0%BA%D0%BE%D0%BC%D1%81%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B8%D0%BB%D0%B0%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C%D1%86%D0%B5%D0%B2%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%2C%20%D0%B2%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D1%85%20%D0%B2%20%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%83%D1%8E%20%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83%20(%D0%9A%D0%98%D0%98)%2C%20%C2%AB%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%C2%BB%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%BE%D1%84%D1%82%20%D1%81%201%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%C2%A0%E2%80%94%20%D1%81%201%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202022%20%D0%B3%D0%BE%D0%B4%D0%B0).
