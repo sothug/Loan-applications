@@ -6,7 +6,7 @@ namespace Loan_applications.Domains
 {
     public class Application : IIdentifier
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public int ClientId { get; set; }
         public int DispatcherId { get; set; }
         public int ManagerId { get; set; }
@@ -15,20 +15,6 @@ namespace Loan_applications.Domains
         public int TypeId { get; set; }
         public int OrganizationId { get; set; }
         public Statuses Status { get; set; }
-
-        public Application()
-        {
-        }
-
-        public Application(int id, int clientId, int amount, DateTime when, int typeId)
-        {
-            ID = id;
-            ClientId = clientId;
-            Amount = amount;
-            When = when;
-            TypeId = typeId;
-            Status = 0;
-        }
 
         public string GetState() => StatusDescriptor.Describe(Status);
     }

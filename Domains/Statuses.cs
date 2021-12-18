@@ -1,4 +1,4 @@
-﻿namespace Loan_applications.Domains
+﻿ namespace Loan_applications.Domains
 {
     public enum Statuses
     {
