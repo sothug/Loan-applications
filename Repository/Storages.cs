@@ -7,14 +7,14 @@ using Loan_applications.Domains;
 
 namespace Loan_applications.Repository
 {
-    public class Storages
+    public static class Storages
     {
-        public static Storage<Agreement> AgreementStorage { get; } = new();
-        public static Storage<Application> ApplicationStorage { get; } = new();
-        public static Storage<Client> ClientStorage { get; } = new();
-        public static Storage<Dispatcher> DispatcherStorage { get; } = new();
-        public static Storage<Manager> ManagerStorage { get; } = new();
-        public static Storage<Organization> OrganizationStorage { get; } = new();
-        public static Storage<TypeOfLending> TypeStorage { get; } = new();
+        public static readonly Storage<Agreement> AgreementStorage = new();
+        public static readonly Storage<Application> ApplicationStorage = new();
+        public static readonly Storage<Client> ClientStorage = new();
+        public static readonly Storage<Dispatcher> DispatcherStorage  = new();
+        public static readonly Storage<Manager> ManagerStorage = new();
+        public static readonly Storage<Organization> OrganizationStorage = new();
+        public static readonly Storage<TypeOfLending> TypeStorage = new();
     }
 }

@@ -33,7 +33,7 @@ namespace Loan_applications.Repository
         public bool Create(TIdentifier obj) 
         {
             // if (_storage.Where(t => t.ID == obj.ID).Count() != 0)
-            if (_storage.Any(t => t.ID == obj.ID))
+            if (_storage.Any(t => t.Id == obj.Id))
                 return false;
             _storage.Add(obj);
             return true;
@@ -41,12 +41,12 @@ namespace Loan_applications.Repository
 
         public TIdentifier Read(int id) 
         {
-            return _storage.FirstOrDefault(t => t.ID == id);
+            return _storage.FirstOrDefault(t => t.Id == id);
         }
 
         public TIdentifier Update(TIdentifier obj) 
         {
-            var index = _storage.FindIndex(t => t.ID == obj.ID);
+            var index = _storage.FindIndex(t => t.Id == obj.Id);
             if (index == -1)
                 Create(obj);
             else
@@ -56,7 +56,7 @@ namespace Loan_applications.Repository
 
         public bool Delete(int objId) 
         { 
-            return _storage.RemoveAll(t => t.ID == objId) != 0;
+            return _storage.RemoveAll(t => t.Id == objId) != 0;
         }
     }
 }
